@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Roboto:wght@300;400;700&display=swap');
+.logo img{
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+
+}
+.bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/blockman-go-1.webp');
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+ nav {
+    height: 100px;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ nav ul {
+    display: flex;
+    list-style: none;
+    width: 450px;
+    /*border: 1px solid red;*/
+    justify-content: space-between;
+ }
+ nav ul li a {
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+ }
+.nav-btn{
+   padding: 8px 8px;
+   display: inline-block;
+   text-align: center;
+   font-size: 20px;
+    color: black;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0px -0px 0px 0px rgba(143 , 64 , 248 , 0.5)
+                0px 0px 0px 0px rgba(39 , 200 , 255 , 0.5) ;
+ }
+ .nav-btn:hover{
+   transform: translate(0, -6px);
+   box-shadow: 10px -10px 25px 0px rgba(143 , 64 , 248 , 0.5)
+                -10px 10px 25px 0px rgba(39 , 200 , 255 , 0.5) ;
+ }
+ .nav-btn:hover::after{
+   transform: rotate(150deg);
+ }
+ .nav-btn::after{
+   content: "";
+   width: 500px;
+   height: 500px;
+   position: absolute;
+   top: -50px;
+   left: -50px;
+   background-color: #ff3cac;
+   background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+   z-index: -1;
+   transition: all 0.25s ease;
+ }
+ .header-info{
+    margin-top: 175px;
+    width: 600px;
+
+ }
+ .header-title h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: aquamarine;
+ }
+ .header-content p {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    line-height: 42px;
+ }
+ .header-btn {
+    display: flex;
+    margin-top: 65px;
+ }
+ .header-btn a {
+    margin-left: 220px;
+    margin-bottom: 50px;
+    display: inline-block;
+ }
+ .PLAYNOW{
+    background: aquamarine;
+    color: black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 2px;
+    
+ }
+
+
